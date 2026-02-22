@@ -4,16 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bluelake Webdevelopment – Improved Digital Communication</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/favicon.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="logo" href="/">Bluelake Webdevelopment</a>
+      <a class="logo" href="/" aria-label="Bluelake Startseite">
+        <img class="logo-img" src="/images/logo-cropped-300x185-1.png" alt="Bluelake Webdevelopment Logo">
+      </a>
       <input id="nav-toggle" class="nav-toggle" type="checkbox">
       <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen"><span></span></label>
       <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="/">Homepage</a>
+        <a class="active" href="/">Homepage</a>
         <a href="/blog/">Blog</a>
         <a href="/kontakt/">Kontakt</a>
       </nav>
@@ -21,17 +25,27 @@
   </header>
 
   <main>
-    <section class="hero container">
-      <h1>Improved.<br>Digital.<br>Communication.</h1>
-      <p>Wir entwickeln qualitativ hochwertige Websites, Mitgliederseiten und unterstützen Sie beim Verkauf digitaler Produkte.</p>
-      <a class="button" href="/kontakt/">Jetzt Kontakt aufnehmen</a>
+    <section class="hero" aria-label="Hero Bereich">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Improved.<br>Digital.<br>Communication.</h1>
+          <p>Wir entwickeln qualitativ hochwertige Websites, Mitgliederseiten und unterstützen Sie beim Verkauf digitaler Produkte.</p>
+          <a class="button button-outline" href="/kontakt/">Jetzt Kontakt aufnehmen</a>
+        </div>
+        <div class="hero-media">
+          <img src="/images/network-1024x1024.jpg" alt="Digitale Netzwerkgrafik">
+        </div>
+      </div>
+      <div class="hero-divider"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none' style='width:100%;display:block'><path fill='#ffffff' opacity='0.33' d='M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z'/><path fill='#ffffff' opacity='0.66' d='M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z'/><path fill='#ffffff' d='M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z'/></svg></div>
     </section>
 
-    <section class="section center container">
-      <h2>Wir bieten Ihnen alles, was Sie für einen erfolgreichen Webauftritt benötigen.</h2>
+    <section class="subtitle-section centered">
+      <div class="container">
+        <h2>Wir bieten Ihnen alles, was Sie für einen erfolgreichen Webauftritt benötigen.</h2>
+      </div>
     </section>
 
-    <section class="ticker" aria-label="Leistungen">
+    <section class="ticker" aria-label="Leistungs-Ticker">
       <div class="ticker-track">
         <span>● Beratung ● Design ● Programmierung ● Marketing ● SEO ●</span>
         <span>● Beratung ● Design ● Programmierung ● Marketing ● SEO ●</span>
@@ -40,31 +54,68 @@
       </div>
     </section>
 
-    <section class="section container center">
-      <h2>Unser Fokus ist Ihre Website</h2>
-      <h3>Cutting Edge Webtechnologien für Ihr Unternehmen</h3>
-      <p>Wir nutzen Technologien die verlässlich, effektiv und erweiterbar sind. Ganz besonders aber auch einen langfristigen Nutzen haben.</p>
+    <section class="section">
+      <div class="container two-col">
+        <div class="text-block">
+          <h2>UNSER FOKUS</h2>
+          <h3>Ihre Website als digitales Fundament</h3>
+          <p>Wir nutzen Technologien, die verlässlich, effektiv und erweiterbar sind. Ganz besonders aber auch einen langfristigen Nutzen haben.</p>
+        </div>
+        <div>
+          <img class="section-image" src="/images/logo_collection-768x768.png" alt="Sammlung digitaler Logos">
+        </div>
+      </div>
     </section>
 
-    <section class="section container center">
-      <h2>Ihr perfektes Team</h2>
-      <h3>Spezialisten aus ganz Europa</h3>
-      <p>Durch unsere langjährige Erfahrung mit virtuellen Teams können wir auf einen großen Pool an hochspezialisierten Designern und Technikern zugreifen. Ganz an Ihren Bedarf angepasst.</p>
+    <section class="section">
+      <div class="container two-col two-col-reverse">
+        <div>
+          <img class="section-image" src="/images/annotated-sebastian.png" alt="Visualisierung Team und Prozesse">
+        </div>
+        <div class="text-block">
+          <h2>IHR PERFEKTES TEAM</h2>
+          <h3>Spezialisten aus ganz Europa</h3>
+          <p>Durch unsere langjährige Erfahrung mit virtuellen Teams können wir auf einen großen Pool an hochspezialisierten Designern und Technikern zugreifen. Ganz an Ihren Bedarf angepasst.</p>
+          <div class="team-note">
+            <h3>Daten im Mittelpunkt</h3>
+            <p>Wir lieben Data-Driven Marketing. Nur auf Basis von Daten können die richtigen Entscheidungen getroffen werden.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section container center">
-      <h2>Daten im Mittelpunkt</h2>
-      <h3>Wir lieben Data - Driven Marketing, nur auf Basis von Daten können die richtigen Entscheidungen getroffen werden.</h3>
+    <section class="tools-section centered">
+      <div class="container">
+        <h2>TOOLS</h2>
+        <h3>Tools für Analyse, Wachstum und bessere Entscheidungen</h3>
+        <div class="tools-grid">
+          <div class="tool-logo">
+            <img src="/images/Google-Analytics-Logo-634x400-1-300x189.jpg" alt="Google Analytics Logo">
+          </div>
+          <div class="tool-logo">
+            <img src="/images/hotjar-300x189.png" alt="Hotjar Logo">
+          </div>
+          <div class="tool-logo">
+            <img src="/images/fba-logo-300x189.png" alt="FBA Logo">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section container center">
-      <h2>Angepasst an eine digitale Welt</h2>
-      <h3>Der richtige Inhalt für das passende Medium</h3>
-      <p>Eine Website ist kein Buch, sie ist kein Zeitungsartikel. Wir helfen Ihnen dabei, Ihren Inhalt in die passende Form zu bringen. Unser Ziel ist es, Ihren Besuchern das zu geben wonach sie suchen, schnell und einfach.</p>
-      <a class="button" href="/blog/was-sind-die-vorteile-einer-website/">Mehr erfahren</a>
+    <section class="section">
+      <div class="container two-col">
+        <div class="text-block">
+          <h2>ANGEPASST AN EINE DIGITALE WELT</h2>
+          <h3>Der richtige Inhalt für das passende Medium</h3>
+          <p>Eine Website ist kein Buch, sie ist kein Zeitungsartikel. Wir helfen Ihnen dabei, Ihren Inhalt in die passende Form zu bringen. Unser Ziel ist es, Ihren Besuchern das zu geben wonach sie suchen, schnell und einfach.</p>
+          <a class="button button-solid" href="/blog/was-sind-die-vorteile-einer-website/">Mehr erfahren</a>
+          <p class="quote-text">Nutzen Sie die Ergebnisse der Forschung, um richtig mit Ihren Kunden zu kommunizieren.</p>
+        </div>
+        <div>
+          <img class="section-image" src="/images/webusability-books-1024x1024.png" alt="Web Usability Bücher">
+        </div>
+      </div>
     </section>
-
-    <p class="quote">Nutzen Sie die Ergebnisse der Forschung um richtig mit Ihren Kunden zu kommunizieren.</p>
   </main>
 
   <footer class="site-footer">

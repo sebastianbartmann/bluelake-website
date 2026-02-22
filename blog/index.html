@@ -4,29 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog – Bluelake Webdevelopment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/images/favicon.jpg">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="logo" href="/">Bluelake Webdevelopment</a>
+      <a class="logo" href="/" aria-label="Bluelake Startseite">
+        <img class="logo-img" src="/images/logo-cropped-300x185-1.png" alt="Bluelake Webdevelopment Logo">
+      </a>
       <input id="nav-toggle" class="nav-toggle" type="checkbox">
       <label for="nav-toggle" class="hamburger" aria-label="Menü öffnen"><span></span></label>
       <nav class="site-nav" aria-label="Hauptnavigation">
         <a href="/">Homepage</a>
-        <a href="/blog/">Blog</a>
+        <a class="active" href="/blog/">Blog</a>
         <a href="/kontakt/">Kontakt</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero container">
+    <section class="blog-hero container">
       <h1>Simplicity. Knowledge. Value.</h1>
-      <p>Servus, Ich bin der Inhaber von Bluelake Webdevelopment. Aus meiner Liebe zur Informatik, dem Interesse an Webtechnologien und der Erfahrung vieler Projekte entsteht dieser Blog. Hiermit will ich mein Wissen weitergeben.</p>
+      <p>Servus, ich bin der Inhaber von Bluelake Webdevelopment. Aus meiner Liebe zur Informatik, dem Interesse an Webtechnologien und der Erfahrung vieler Projekte entsteht dieser Blog. Hiermit will ich mein Wissen weitergeben.</p>
     </section>
 
-    <section class="section container">
+    <section class="section blog-list-section container">
       <div class="blog-grid">
         <article class="card">
           <div class="meta">Allgemein</div>
